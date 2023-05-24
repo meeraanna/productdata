@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<br>
+<div class="formstyle">
+
+<form  method="POST" action="quarted_data">
+    <h2><u>Ohio production</u></h2>
+    {% csrf_token %}
+
+    <label>Api well no:</label>
+    <input type="text" name="API_WELL_NUMBER"><br>
+    <input type="Submit">
+
+
+</form>
+</div>
+
+
+
+{% endblock %}

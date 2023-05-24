@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<br><br>
+
+<div class="formstyle" >
+<h2><u>Annual data</u></h2>
+{% for i in data %}
+    <b>OIl:</b> {{i.OIL}}<br>
+    <b>Gas:</b> {{i.GAS}}<br>
+    <b>Brine:</b> {{i.BRINE}}
+{% endfor %}
+
+</div>
+
+
+{% endblock %}
+
+
